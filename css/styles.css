@@ -32,6 +32,12 @@ header {
     height: 60px;
 }
 
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 nav {
     display: flex;
     gap: 15px;
@@ -117,3 +123,35 @@ footer {
     }
 }
 
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        height: auto; /* Adjust height dynamically */
+        padding: 20px;
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .content {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
